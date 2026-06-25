@@ -49,7 +49,16 @@ class school:
             "D": 1.0,
             "F": 0.0
         }
-        return grade_values.get(grade, 0.0)     
+        return grade_values.get(grade, 0.0)   
+    
+    
+    
+    @staticmethod
+    def value_to_grade(value):
+        if value >= 4.5 and value <= 5.00:
+            return "A+"
+        
+          
     
     
     
