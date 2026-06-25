@@ -72,6 +72,7 @@ class school:
             
         
           
-    
+    def __repr__(self):
+        pass
     
     
