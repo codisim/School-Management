@@ -57,6 +57,19 @@ class school:
     def value_to_grade(value):
         if value >= 4.5 and value <= 5.00:
             return "A+"
+        elif value >= 4.0 and value < 4.5:
+            return "A"
+        elif value >= 3.5 and value < 4.0:
+            return "A-"
+        elif value >= 3.0 and value < 3.5:
+            return "B"
+        elif value >= 2.0 and value < 3.0:
+            return "C"
+        elif value >= 1.0 and value < 2.0:
+            return "D"
+        else:
+            return "F"
+            
         
           
     
