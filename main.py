@@ -16,3 +16,14 @@ ten = ClassRoom("Ten")
 school.add_classroom(eight)
 school.add_classroom(eight)
 school.add_classroom(eight)
+
+
+
+rahim = Student("Rahim", eight)
+habib = Student("Habib", nine)
+karin = Student("Karin", nine)
+ratan = Student("Ratan", ten)
+kamal = Student("Kamal", ten)
+manik = Student("Manik", eight)
+
+
