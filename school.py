@@ -15,7 +15,8 @@ class school:
         self.teachers[subject] = teacher
         
     def student_admission(self, student):
-        pass
+        classname = student.classroom.name
+        self.classrooms[classname].add_student(student)
     
     
         
