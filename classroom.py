@@ -13,3 +13,7 @@ class ClassRoom:
         
     def add_sub(self, subject):
         self.subjects.append(subject)
+        
+    def take_semester_final_exam(self):
+        for subject in self.subjects:
+            subject.exam(self.subjects)
