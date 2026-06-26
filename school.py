@@ -1,5 +1,5 @@
 
-class school:
+class School:
     def __init_(self, name, location):
         self.name = name
         self.location = location
@@ -105,4 +105,4 @@ class school:
                 for k, i in student.marks.items():
                     print(student.name, k, i, student.subject_grade[k])
                 print(student.final_grade())
-        
+        return ''
