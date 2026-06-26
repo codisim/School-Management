@@ -1,4 +1,5 @@
 import random
+from school import School 
 
 class Person:
     def __init__(self, name):
@@ -24,4 +25,10 @@ class Student(Person):
         self.subject_grades = {}
         self.grade = None
     
-    
+    def final_grade(self):
+        sum = 0
+        for grade in self.subject_grades.values():
+            point = School.grade_to_value(grade)
+            sum += point
+            gpa = sum / len(self.subject_grades)
+            self.grade = School.value_to_grade(gpa)
