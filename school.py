@@ -74,6 +74,10 @@ class school:
         
           
     def __repr__(self):
-        pass
+        # all class room
+        for key in self.classrooms.keys():
+            print(key)
+            
+        
     
     
