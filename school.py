@@ -7,7 +7,7 @@ class school:
         self.location = {}
         self.classrooms = {}
         
-        
+         
     def add_classroom(self, classroom):
         self.classrooms[classroom.name] = classroom 
     
@@ -95,4 +95,14 @@ class school:
                 subject += f"{sub.name}\n"
         print(subject)
         
+        
+        #  all teachers
+        
+        # student results
+        print("Student results")
+        for key, value in self.classrooms.items():
+            for student in value.students:
+                for k, i in student.marks.items():
+                    print(student.name, k, i, student.subject_grade[k])
+                print(student.final_grade())
         
