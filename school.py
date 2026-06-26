@@ -85,5 +85,14 @@ class school:
             result += f"---{key.upper()} Classroom Students\n"
             for student in value.students:
                 result += f"{student.name}\n"
+        print(result)
     
-    
+        #  all subjects
+        subject = ''
+        for key, value in self.classrooms.items():
+            subject += f"---{key.upper()} Classroom Subjects\n"
+            for sub in value.subjects:
+                subject += f"{sub.name}\n"
+        print(subject)
+        
+        
