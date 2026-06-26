@@ -10,3 +10,6 @@ class ClassRoom:
         rool_no = f"{self.name}-{len(self.students)+1}"
         student.id = rool_no
         self.students.append(student)
+        
+    def add_sub(self, subject):
+        self.subjects.append(subject)
